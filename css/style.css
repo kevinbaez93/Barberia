@@ -9,8 +9,9 @@ body {
     font-size: 15px;
     background-image: url(../images/fondoweb.jpg);
     background-size: 100%;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* Navegador */
 
@@ -22,7 +23,7 @@ body {
 
 .navegador {
     width: 100%;
-    padding: 25px 25px; 
+    padding: 1rem; 
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
@@ -31,21 +32,43 @@ body {
 .list__navegador {
     list-style: none;
     width: 80%;
-    /* margin-left: 300px; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 
 }
 
-.link__list {
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(167, 162, 109);
-    font-size: 1.7rem;      
+.item__list {
+    width: 15%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.link__list {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 244, 230);
+    font-size: 1.3rem;
+    
+}
 
+.item__list--modificador {
+    background-color: rgba(245, 244, 230, 0.8);
+    border-radius: 5px;
+}
+
+.link__list--modificador {
+    color: rgb(26, 25, 23);
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 4rem;
+    align-items: flex-end;
+}
 
 /* Navegador*/
 
@@ -55,14 +78,13 @@ body {
 .container {
     width: 100%;
     height: auto;
-    /* background-image: url(../images/fondo.jpg); */
 }
 
 .title__page {
     padding: 20px;
-    font-family: 'Dosis', sans-serif;
-    font-size: 2rem;
-    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: rgb(245, 244, 230);
 }
 
 .container__section {
@@ -114,7 +136,7 @@ p {
 /* Estilos pagina service */
 
 .container__services {
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-left: 5%;
     margin-right: 10%;
     padding-bottom: 8rem;
@@ -152,6 +174,7 @@ p {
 .name__service, .valor__service {
     color: aliceblue;
     font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .valor__service {
@@ -194,37 +217,37 @@ p {
 .name__products {
     text-align: center;
     margin-top: 10px;
-    font-family: 'Dosis', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
 }
 
 /* Fin Estilo Pagina Products */
 
 
-/* Estilos Pagina About */
+/* Estilos Pagina Blog */
 
-.container__valor {
-    width: 90%;
-    margin-top: 40px;
-    margin-left: 85px;
-    padding-bottom: 80px;
+.container__blog {
+    width: 80%;
+    margin-top: 3.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 8rem;
     text-align: center;
 }
 
-.valor {
+.card__blog {
     display: inline-block;
     width: 25%;
-    height: 450px;
-    margin: 0 25px;
+    height: auto;
+    margin: 0 2rem;
     font-size: 1.1rem;
     text-align: justify;
-    border: rgb(26, 25, 23) dashed 2px ;
-    padding: 0 20px;
-    background-color: rgba(99, 96, 96, 0.8);
-    border-radius: 3%  25% ;
+    padding: 0 1.3rem;
+    padding-bottom: 7rem;
+    background-color: rgba(26, 25, 23, 0.85);
 }
 
-.title__valor {
+.title__blog {
     font-family: 'Dosis', sans-serif;
     text-align: center;
     font-size: 1.5rem;
@@ -233,63 +256,70 @@ p {
     color: rgb(229, 228, 226);
 }
 
-.description__valor {
+.description__blog {
     color: rgb(229, 228, 226);
-    font-family: 'Dosis', sans-serif;
-    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
 }
 
-/* Fin Estilos Pagina About */
+/* Fin Estilos Pagina Blog */
 
 
 /* Estilo Pagina Contact */
 
 .container__form {
     margin-top: 5rem;
+    margin-bottom: 8rem;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .form {
     background-color: rgba(26, 25, 23, 0.5);
     border-radius: 10px;
-    width: 30%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
+    width: 40%;
+    padding: 2.5rem;
 }
 
-.name__form, .phone__form, .mail__form {
+.name__form, .phone__form, .mail__form, .reserve__form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 1.5rem;
-    
+    margin-bottom: 1.5rem;   
 }
 
 .label__form {
-    font-family: 'Dosis', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: aliceblue;
 }
 
 .input__form, .reserve, .send {
-    width: 12rem;
     height: 2rem;
+    font-size: 1rem;
 }
 
-.reserve__form {
-    display: grid;
-    grid-template-columns:  1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    margin-bottom: 1.5rem;
-}
-
-/* .send {
+.card__send {
     display: flex;
-    flex-direction: column;
-} */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.send {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 6.5rem;    
+}
+
+.container__maps {
+    display: flex;
+    align-items: center;
+}
+
+#maps  {
+    border-radius: 5px;     
+}
+
 
 
 /* Fin Estilo Pagina Contact */
@@ -303,9 +333,31 @@ p {
     background-color: rgba(26, 25, 23, 0.7);
     margin-top: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;    
 }
+
+.container__info {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 0.3rem;
+    line-height: ;
+}
+
+.titulo__contacto { 
+    color: aliceblue;
+    font-size: 1.1rem;
+    /* margin-top: 0.8rem; */
+}
+
+.dato__contacto{
+    color: aliceblue;
+    line-height: 1.8rem;
+    /* margin-top: 0.4rem; */
+} */
+
+.info__horario
 
 .copyright {
     font-size: 2rem;

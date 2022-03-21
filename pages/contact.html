@@ -19,7 +19,9 @@
            
         <!-- Navegador -->
         <nav class="navegador">
-            <img id="logo" src="../images/logo-principal.png" width="70" height="70" alt="Logo Barberia">
+            <a href="../index.html">
+                <img id="logo" src="../images/logo-principal.png" alt="Logo Barberia">
+            </a>
             
             <ul class="list__navegador">
                 <li class="item__list">
@@ -35,11 +37,11 @@
                 </li>
       
                 <li class="item__list">
-                    <a class="link__list" href="about.html">Nosotros</a>
+                    <a class="link__list" href="blog.html">Blog</a>
                 </li>
       
-                <li class="item__list">
-                    <a class="link__list" href="contact.html">Contacto</a>
+                <li class="item__list item__list--modificador">
+                    <a class="link__list link__list--modificador" href="contact.html">Reserva</a>
                 </li>
             </ul>   
         </nav>
@@ -70,7 +72,7 @@
                 </div>
             
                 <div class="reserve__form">
-                    <span class="label__form">Horario</span>
+                    <label class="label__form">Horario</label>
                     <select class="reserve" name="Agendar" id="">
                         <option value="">9:00 a 10:00</option>
                         <option value="">10:00 a 11:00</option>
@@ -81,11 +83,18 @@
                         <option value="">16:00 a 17:00</option>
                         <option value="">17:00 a 18:00</option>
                         <option value="">18:00 a 19:00</option>
-                    </select>                   
-                    <input class="send" type="submit" value="Agendar">
-                    
+                    </select>                                      
                 </div>
+
+                <div class="card__send"> 
+                    <input class="send" type="submit" value="Agendar">
+                </div>                
             </form>
+
+            <div class="container__maps">
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d836.1081137787905!2d-71.62325018643875!3d-33.04507982324998!3m2!1i1024!2i768!4f13.1!2m1!1sCondell%201329%2C%20local%2016%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1647758055662!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
         </div>
 
     </main>
@@ -93,6 +102,28 @@
     
     <!-- Footer -->
     <footer class="footer">
+        <div class="container__info">
+            <div class="info__contacto">
+                <h5 class="titulo__contacto">Visítanos</h5>
+                <span class="dato__contacto">Condell 1329, local 16, Valparaíso</span>
+                <h5 class="titulo__contacto">Llámanos</h5>
+                <span class="dato__contacto">+596 999 9999</span>
+            </div>
+            <div class="info__horario">
+                <h5>Horario</h5>
+                <div class="horario__semana">
+                    <span>Lunes a Viernes</span>
+                    <span>09:00 a 13:00 / 14:00 a 19:00</span>
+                </div>
+                <div class="horario__findesemana">
+                    <span>Lunes a Viernes</span>
+                    <span>09:00 a 13:00 / 14:00 a 19:00</span>
+                </div>
+            </div>
+            <div class="info__redes">
+                <h5>Nuestras Redes</h5>
+            </div>
+        </div>
 
         <p class="copyright">Crditos //  2022 //  Kevin Baez</p>
 
